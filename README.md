@@ -8,11 +8,9 @@
 
 **Accuracy, range, and sample rate:** This device measures 10 input voltages from ground to 3.3V using the STM32's 12-bit ADC. Voltage readings quantized into 4096 bins, each spanning 806 µV. Effective ADC resolution is 1-2 mV. Readings occur automatically on all 10 channels at ~1Hz.
 
+**Software:** Any serial terminal will display data from this device. Official software is available but it's in Chinese. Default serial port settings are: 115200 baud, 8 bit frame, 1 stop bit, no flow control.
+
 **No configuration required.** After providing power (through the USB port) the device immediately begins measuring and sending values over the serial port.
-
-![](doc/images/adc.gif)
-
-**Software:** Any serial terminal will display data from this device. Official software is available but it's in Chinese. I recommend using [RealTerm](https://sourceforge.net/projects/realterm/) configured to display ASCII at 115200 baud using the settings in the screenshot. RealTerm allows serial data to be logged to a CSV file.
 
 ## Hardware
 
@@ -23,6 +21,20 @@ Front | Back
 ## Schematic
 
 ![](doc/schematic.png)
+
+## Software
+
+### RealTerm
+
+![](doc/images/adc.gif)
+
+I recommend using [RealTerm](https://sourceforge.net/projects/realterm/) configured to display ASCII at  using the settings in the screenshot. RealTerm allows serial data to be logged to a CSV file.
+
+### SeriPlot
+
+![](doc/images/seriplot2.gif)
+
+The [SeriPlot project](https://github.com/swharden/SeriPlot) is a Windows application that can display ADC voltages in real time.
 
 ## Resources
 
