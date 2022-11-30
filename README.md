@@ -30,13 +30,45 @@ Front | Back
 
 I recommend using [RealTerm](https://sourceforge.net/projects/realterm/) configured to display ASCII at  using the settings in the screenshot. RealTerm allows serial data to be logged to a CSV file.
 
-### SeriPlot
+### ADC-10-F103C Plotter
 
 ![](doc/images/seriplot2.gif)
 
-The [SeriPlot project](https://github.com/swharden/SeriPlot) is a Windows application that can display ADC voltages in real time.
 
-## Resources
+**ADC-10-F103C Plotter is a Windows application that plots serial port data in real time.** This application is designed to be easy to modify to support custom data formats. Source code is MIT licensed so it can be adapted for commercial applications, and it is easy to distribute as a click-to-run Windows application. 
+
+* **Download:** A click-to-run EXE can be downloaded from the [**Releases page**](releases)
+
+* **Source:** ADC-10-F103C Plotter source code is in the [src](src) folder
+
+* An alternative project is: https://github.com/swharden/SeriPlot
+
+#### Free Software
+
+* [SerialPlot](https://hg.sr.ht/~hyozd/serialplot/) - C++ and Qt
+* [YAT (Yet Another Terminal)](https://sourceforge.net/projects/y-a-terminal/) - .NET, plotting supported (currently beta)
+* [SerialLab](https://github.com/ahsayde/Serial-Lab) - C#, looks good, fixed format
+* [ArduinoPlot](https://github.com/gregpinero/ArduinoPlot) - Python + Matplotlib
+* [Arduino Plotter](https://github.com/devinaconley/arduino-plotter) - Arduino library
+* [RealtimePlotter](https://github.com/sebnil/RealtimePlotter) - JavaScript
+* RealTerm saving data + GnuPlot reloading the file
+* [SimPlot](https://github.com/infomaniac50/projectsimplot) - Visual Basic program (binary available)
+* [Telemetry](https://github.com/Overdrivr/Telemetry) Python + Qt (complex framed protocol)
+* [Serial Chart](http://www.starlino.com/imu_kalman_arduino.html) - EXE, awkward configuration, crashed for me
+* [Serial Monitor](https://github.com/hirohashi/SerialMonitor) - C++ source code only
+* [RealTerm](https://sourceforge.net/projects/realterm/) - log a CSV while plotting it with another program
+
+#### Commercial Software
+* [MegunoLink](http://www.megunolink.com/) $29.95
+* [MakerPlot](http://www.makerplot.com/) $39
+
+#### Common Downsides
+* Data format is often inflexible
+* Arduino-specific JavaScript + Processing software
+* Python GUI applications require complicated and brittle environments
+* Not available as a click-to-run EXE
+
+## Additional Resources
 
 * Official documentation: [USB interface 10 channel 12Bit ADC data acquisition STM32 UA](http://www.chinalctech.com/m/view.php?aid=68)
 
